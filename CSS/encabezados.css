@@ -1,0 +1,16 @@
+/* paleta de colores inicial:
+.color1 { #47dccc };
+.color2 { #fb86ca };
+.color3 { #156f65 };
+.color4 { #ad696a };
+.color5 { #d9b3bf }; 
+*/
+/* Cambia el cursor en toda la página */
+* {
+    cursor: url('../Imagenes/cursor1.png'), auto;
+}
+
+  /* Cambia el cursor solo para un elemento específico */
+.logo {
+    cursor: url('../Imagenes/cursor2.png'), auto;
+}
