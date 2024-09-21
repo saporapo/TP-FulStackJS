@@ -8,9 +8,58 @@
 /* Cambia el cursor en toda la página */
 * {
     cursor: url('../Imagenes/cursor1.png'), auto;
+    margin: 0;
+}
+
+.priEncab {
+  background-color: #8f6c96;
+  height: 30px;
+}
+
+.secEncab {
+  background-color: #f8edff;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: repeat(2,1fr);
+}
+.item-img{ 
+  grid-area: 1 / 1 / 3 / 2; 
+  align-content: center;
+  text-align: center;
+}
+.buscador { 
+  grid-area: 1 / 2 / 2 / 3; 
+  margin-top: 20px;
+}
+.opciones { 
+  grid-area: 2 / 2 / 3 / 3; 
 }
 
   /* Cambia el cursor solo para un elemento específico */
-.logo {
-    cursor: url('../Imagenes/cursor2.png'), auto;
+.item-img .logo {
+  /* cursor: url('../Imagenes/cursor2.png'), auto; */
+  
+}
+
+.buscador .search-form{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.buscador .nav{
+  width: 40vw;
+  height: 50px;
+  border-radius:15px;
+}
+.search-form input[type="search"]{
+  padding: 10px;
+}
+.buscador .buscar {
+  background-color: #cbf6ff;
+  border-radius: 100%;
+}
+.buscador .buscar img{
+  margin-left: 1px;
+  margin-top: 1px;
 }
