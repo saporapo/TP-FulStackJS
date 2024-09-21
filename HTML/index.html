@@ -16,12 +16,33 @@
             <img class="logo" src="../Imagenes/logoInicial.png" alt="logo">
         </div>
         <div class="buscador">
-            <form class="search-form" role="search" aria-label="On this page">
-                <input class="nav" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-                <button class="buscar" type="submit"><img src="../Imagenes/iconoBuscar.png"></button>
+            <form class="search-form">
+                <input class="nav" type="text" placeholder="¿Qué estás buscando?">
+                <button class="buscar"><img src="../Imagenes/iconoBuscar.png"></button>
             </form>
         </div>
         <div class="opciones">
+            <a href="artsAnime.html" class="boton"> Anime </a>
+            <a href="artsVJ.html" class="boton"> Videojuegos </a>
+            <a href="artsTerror.html" class="boton"> Terror </a>
+            <a href="artsKawaii.html" class="boton"> Kawaii </a>
+            <a href="artsPS.html" class="boton"> Peliculas/Series </a>
+            <a href="artsDeco.html" class="boton"> Decorativos </a>
+            <a href="artsPedidos.html" class="boton"> A Pedido </a>
+        </div>
+        <div class="reemplazo-ops">
+            <form class="search-form">
+                <select id="menu-opciones">
+                    <option value="" disabled selected>Menu</option>
+                    <option value="anime">Anime</option>
+                    <option value="vj">Videojuegos</option>
+                    <option value="terror">Terror</option>
+                    <option value="kawaii">Kawaii</option>
+                    <option value="ps">Peliculas/Series</option>
+                    <option value="decorativos">Decorativos</option>
+                    <option value="pedidos">A Pedido</option>
+                </select>
+            </form>
         </div>
     </div>
 </body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Artículos</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #articulos { margin-top: 20px; }
+        .articulo { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Buscador de Artículos</h1>
+    <input type="text" id="buscador" placeholder="Buscar artículos...">
+    <button id="buscarBtn">Buscar</button>
+    <div id="articulos">
+        <div class="articulo">Artículo 1: Aprendiendo HTML</div>
+        <div class="articulo">Artículo 2: Introducción a CSS</div>
+        <div class="articulo">Artículo 3: JavaScript para Principiantes</div>
+        <div class="articulo">Artículo 4: Desarrollo Web Moderno</div>
+        <div class="articulo">Artículo 5: Frameworks de JavaScript</div>
+    </div>
+
+    <script>
+        const buscarBtn = document.getElementById('buscarBtn');
+        const buscador = document.getElementById('buscador');
+        const articulos = document.querySelectorAll('.articulo');
+
+        buscarBtn.addEventListener('click', () => {
+            const textoBuscado = buscador.value.toLowerCase();
+            articulos.forEach(articulo => {
+                const textoArticulo = articulo.textContent.toLowerCase();
+                articulo.style.display = textoArticulo.includes(textoBuscado) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
+
