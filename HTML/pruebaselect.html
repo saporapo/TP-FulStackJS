@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select Arrow</title>
+    <style>
+        .custom-select {
+            position: relative;
+            display: inline-block;
+            width: 200px; /* Ajusta el ancho según tus necesidades */
+        }
+
+        .custom-select::after {
+            content: '▼'; /* Puedes cambiarlo por un icono */
+            font-size: 16px; /* Ajusta el tamaño */
+            position: absolute;
+            right: 10px; /* Posición de la flecha */
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none; /* Para que no interfiera con el clic */
+        }
+
+        .custom-select select:focus + .custom-select::after {
+            color: blue; /* Cambiar color al hacer focus */
+        }
+
+        /* Estilo adicional para la flecha en hover */
+        .custom-select:hover::after {
+            color: green; /* Cambiar color al pasar el mouse */
+        }
+
+        .custom-select select {
+            padding: 10px; /* Espaciado interno */
+            width: 100%; /* Ocupa todo el ancho del contenedor */
+            border: 1px solid #ccc; /* Borde del select */
+            border-radius: 4px; /* Bordes redondeados */
+            appearance: none; /* Oculta el diseño por defecto en algunos navegadores */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="custom-select">
+        <select>
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+        </select>
+    </div>
+
+</body>
+</html>
+
