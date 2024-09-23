@@ -6,11 +6,30 @@
 
 .priEncab {
   background-color: #8f6c96;
-  height: 30px;
+  height: 38px;
+}
+.iconos{
+  display: flex;
+  justify-content: flex-end; /* Centra horizontalmente */
+  padding-top: 4px;
+  padding-right: 12px;
+}
+.iconos .icon{
+  margin-right: 5px;
+}
+.iconos small{
+  margin-top: 4px;
+}
+.iconos .login{
+  cursor: url('../Imagenes/cursor2.png'), auto;
+}
+.iconos .carrito{
+  cursor: url('../Imagenes/cursor2.png'), auto;
 }
 
 .secEncab {
   background-color: #f8edff;
+  border-bottom: 1px solid black;
   height: 200px;
   display: grid;
   grid-template-columns: 22% 1fr;
@@ -48,6 +67,13 @@
   text-decoration: none;
   margin: 10px;
   cursor: url('../Imagenes/cursor2.png'), auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra exterior */
+  transition: box-shadow 0.3s;
+}
+.boton:hover{ 
+  color: black;
+  background-color: #b66ecb;
+  text-decoration: none;
 }
 .buscador .search-form{
   display: flex;
@@ -56,14 +82,17 @@
 }
 .buscador .nav{
   width: 40vw;
-  height: 30px;
   border-radius:15px;
   cursor: url('../Imagenes/cursor2.png'), auto;
   padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra exterior */
+  transition: box-shadow 0.3s;
 }
 .buscador .buscar {
   background-color: #cbf6ff;
   border-radius: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra exterior */
+  transition: box-shadow 0.3s;
 }
 .buscador .buscar img{
   margin-left: 1px;
@@ -110,6 +139,11 @@
     text-decoration: none;
     margin: 10px;
   }
+  .boton:hover{ 
+    color: black;
+    background-color: #b66ecb;
+    text-decoration: none;
+  }
   .buscador .search-form{
     display: flex;
     justify-content: center; 
@@ -117,7 +151,6 @@
   }
   .buscador .nav{
     width: 40vw;
-    height: 30px;
     border-radius:15px;
     cursor: url('../Imagenes/cursor2.png'), auto;
     padding: 10px;
@@ -187,7 +220,6 @@
   }
   .buscador .nav{
     width: 40vw;
-    height: 30px;
     border-radius:15px;
     cursor: url('../Imagenes/cursor2.png'), auto;
     padding: 10px;
@@ -247,7 +279,6 @@
   }
   .buscador .nav{
     width: 60vw;
-    height: 25px;
     border-radius:15px;
     cursor: url('../Imagenes/cursor2.png'), auto;
     padding: 10px;
