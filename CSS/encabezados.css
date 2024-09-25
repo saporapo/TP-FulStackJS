@@ -75,7 +75,7 @@
   background-color: #b66ecb;
   text-decoration: none;
 }
-.buscador .search-form{
+.buscador nav{
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -144,7 +144,7 @@
     background-color: #b66ecb;
     text-decoration: none;
   }
-  .buscador .search-form{
+  .buscador nav{
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -166,7 +166,7 @@
   }
 }
 
-@media only screen and (max-width: 826px){
+@media only screen and (max-width: 845px){
   .secEncab {
     background-color: #f8edff;
     height: 200px;
@@ -213,7 +213,7 @@
     cursor: url('../Imagenes/cursor2.png'), auto;
     outline: none;
   }
-  .buscador .search-form{
+  .buscador nav{
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -272,7 +272,7 @@
     padding-left: 15px;
     cursor: url('../Imagenes/cursor2.png'), auto;
   }
-  .buscador .search-form{
+  .buscador nav{
     display: flex;
     justify-content: center; 
     align-items: center;

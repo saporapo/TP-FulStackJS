@@ -1,11 +1,26 @@
+body{
+    background-color: #69b4c2;
+}
 #carouselExampleIndicators{
-    background-color: #d9d9d9;
+    background-color: #fad8eb;
     height: 400px;
+}
+#carouselExampleIndicators video{
+    height: 398px;
+    margin-top: 1px;
 }
 .carousel-indicators li{
     height: 5px;
     cursor: url('../Imagenes/cursor2.png'), auto;
     border-radius: 5px;
+}
+.carousel-control-next{
+    justify-content: start;
+    width: 25%;
+}
+.carousel-control-prev{
+    justify-content: end;
+    width: 25%;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
     cursor: url('../Imagenes/cursor2.png'), auto;
@@ -28,7 +43,75 @@
     transform: scale(1.1); 
 }
 
-footer{
-    background-color: #69b4c2;
-    height: 237px;
+@media only screen and (max-width: 1140px){
+    #carouselExampleIndicators{
+        background-color: #fad8eb;
+        height: 400px;
+    }
+    #carouselExampleIndicators video{
+        height: 398px;
+        margin-top: 1px;
+    }
+    .carousel-indicators li{
+        height: 5px;
+        cursor: url('../Imagenes/cursor2.png'), auto;
+        border-radius: 5px;
+    }
+    .carousel-control-next{
+        justify-content: start;
+        width: 15%;
+    }
+    .carousel-control-prev{
+        justify-content: end;
+        width: 15%;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        cursor: url('../Imagenes/cursor2.png'), auto;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    #carouselExampleIndicators{
+        background-color: #fad8eb;
+        height: 400px;
+    }
+    #carouselExampleIndicators video{
+        height: 398px;
+        margin-top: 1px;
+    }
+    .carousel-indicators li{
+        height: 5px;
+        cursor: url('../Imagenes/cursor2.png'), auto;
+        border-radius: 5px;
+    }
+    .carousel-control-next{
+        justify-content: start;
+        width: 5%;
+    }
+    .carousel-control-prev{
+        justify-content: end;
+        width: 5%;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        cursor: url('../Imagenes/cursor2.png'), auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #carouselExampleIndicators{
+        background-color: #fad8eb;
+        height: 400px;
+    }
+    #carouselExampleIndicators video{
+        height: 398px;
+        margin-top: 1px;
+    }
+    .carousel-indicators li{
+        height: 5px;
+        cursor: url('../Imagenes/cursor2.png'), auto;
+        border-radius: 5px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        cursor: url('../Imagenes/cursor2.png'), auto;
+    }
 }
