@@ -1,117 +1,35 @@
 body{
     background-color: #69b4c2;
 }
-#carouselExampleIndicators{
-    background-color: #fad8eb;
-    height: 400px;
+.carousel-inner > .item > video,
+    .carousel-inner > .item > a > video {
+        width: 500px;
+        height: 350px;
+        margin-top: 5px;
 }
-#carouselExampleIndicators video{
-    height: 398px;
-    margin-top: 1px;
+.container{
+    display: flex;
+    justify-content: center;
 }
-.carousel-indicators li{
-    height: 5px;
-    cursor: url('../Imagenes/cursor2.png'), auto;
-    border-radius: 5px;
+#theCarousel{
+    background-color: #242223;
+    width: 500px;
 }
-.carousel-control-next{
-    justify-content: start;
-    width: 25%;
-}
-.carousel-control-prev{
-    justify-content: end;
-    width: 25%;
-}
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    cursor: url('../Imagenes/cursor2.png'), auto;
-}
-
-.redes-sociales{
-    background-color: #fcc2c4;
-    height: 40px;
-    text-align: center;
-    border-top: 1px solid black;
-}
-.redes-sociales img{
-    margin: 4px 5px;
-    cursor: url('../Imagenes/cursor2.png'), auto;
-}
-.redes-sociales img:hover {  /*Hover de las imagenes*/
-    margin: 4px 5px;
-    opacity: 1;
-    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agrega transición suave para efecto de cambio de filtro y de transformación */
-    transform: scale(1.1); 
-}
-
-@media only screen and (max-width: 1140px){
-    #carouselExampleIndicators{
-        background-color: #fad8eb;
-        height: 400px;
+@media only screen and (max-width: 520px){
+    .carousel-inner > .item > video,
+        .carousel-inner > .item > a > video {
+            width: 100%;
+            height: 350px;
+            margin-top: 5px;
     }
-    #carouselExampleIndicators video{
-        height: 398px;
-        margin-top: 1px;
+    .container{
+        display: flex;
+        justify-content: center;
     }
-    .carousel-indicators li{
-        height: 5px;
-        cursor: url('../Imagenes/cursor2.png'), auto;
-        border-radius: 5px;
-    }
-    .carousel-control-next{
-        justify-content: start;
-        width: 15%;
-    }
-    .carousel-control-prev{
-        justify-content: end;
-        width: 15%;
-    }
-    .carousel-control-next-icon, .carousel-control-prev-icon{
-        cursor: url('../Imagenes/cursor2.png'), auto;
+    #theCarousel{
+        background-color: #242223;
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 840px){
-    #carouselExampleIndicators{
-        background-color: #fad8eb;
-        height: 400px;
-    }
-    #carouselExampleIndicators video{
-        height: 398px;
-        margin-top: 1px;
-    }
-    .carousel-indicators li{
-        height: 5px;
-        cursor: url('../Imagenes/cursor2.png'), auto;
-        border-radius: 5px;
-    }
-    .carousel-control-next{
-        justify-content: start;
-        width: 5%;
-    }
-    .carousel-control-prev{
-        justify-content: end;
-        width: 5%;
-    }
-    .carousel-control-next-icon, .carousel-control-prev-icon{
-        cursor: url('../Imagenes/cursor2.png'), auto;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    #carouselExampleIndicators{
-        background-color: #fad8eb;
-        height: 400px;
-    }
-    #carouselExampleIndicators video{
-        height: 398px;
-        margin-top: 1px;
-    }
-    .carousel-indicators li{
-        height: 5px;
-        cursor: url('../Imagenes/cursor2.png'), auto;
-        border-radius: 5px;
-    }
-    .carousel-control-next-icon, .carousel-control-prev-icon{
-        cursor: url('../Imagenes/cursor2.png'), auto;
-    }
-}
+/* background-color: #fad8eb; */
