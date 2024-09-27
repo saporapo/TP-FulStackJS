@@ -326,6 +326,9 @@
 .categ a{
   cursor: url('../Imagenes/cursor2.png'), auto;
 }
+.categ img{
+  margin-top: 5px;
+}
 @media only screen and (max-width: 570px){
   .containerfoot{
       display: flex;
