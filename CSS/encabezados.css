@@ -20,11 +20,20 @@
 .iconos small{
   margin-top: 4px;
 }
-.iconos .login{
+.iconos .login:hover{
   cursor: url('../Imagenes/cursor2.png'), auto;
+  opacity: 1;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agrega transición suave para efecto de cambio de filtro y de transformación */
+  transform: scale(1.1); 
 }
-.iconos .carrito{
+.iconos .login{
+  margin-top: 2px;
+}
+.iconos .carrito:hover{
   cursor: url('../Imagenes/cursor2.png'), auto;
+  opacity: 1;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agrega transición suave para efecto de cambio de filtro y de transformación */
+  transform: scale(1.1); 
 }
 
 .secEncab {
