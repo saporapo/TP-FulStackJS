@@ -28,17 +28,17 @@
                 </nav>
             </div>
             <div class="opciones">
-                <a href="artsAnime.html" class="boton"> Anime </a>
-                <a href="artsVJ.html" class="boton"> Videojuegos </a>
-                <a href="artsTerror.html" class="boton"> Terror </a>
-                <a href="artsKawaii.html" class="boton"> Kawaii </a>
-                <a href="artsPS.html" class="boton"> Peliculas/Series </a>
-                <a href="artsPedidos.html" class="boton"> A Pedido </a>
+                <button  class="boton" onclick="artsA()"> Anime </button>
+                <button  class="boton" onclick="artsVJ()"> Videojuegos </button>
+                <button  class="boton" onclick="artsT()"> Terror </button>
+                <button  class="boton" onclick="artsK()"> Kawaii </button>
+                <button  class="boton" onclick="artsPS()"> Peliculas/Series </button>
+                <button  class="boton" onclick="window.location.href='artsPedidos.html'"> A Pedido </button>
             </div>
             <div class="reemplazo-ops">
                 <div class="container-select">
-                    <select id="menu-opciones">
-                        <option value="" disabled selected>Menu</option>
+                    <select id="menu-opciones" onchange="artsfiltrados()"> <!-- pedidos debe redirigirte a artspedidos -->
+                        <option value="" disabled selected>Categorías</option>
                         <option value="anime">Anime</option>
                         <option value="vj">Videojuegos</option>
                         <option value="terror">Terror</option>
@@ -61,12 +61,12 @@
             <div class="categ" style="margin-right: 5%;">
                 <strong>Navegación</strong>
                 <ul>
-                    <li><a href="artsAnime.html" style="color: rgb(63, 62, 62);">Anime </a></li>
-                    <li><a href="artsVJ.html"style="color: rgb(63, 62, 62);">Videojuegos </a></li>
-                    <li><a href="artsTerror.html" style="color: rgb(63, 62, 62);">Terror </a></li>
-                    <li><a href="artsKawaii.html" style="color: rgb(63, 62, 62);">Kawaii </a></li>
-                    <li><a href="artsPS.html" style="color: rgb(63, 62, 62);">Peliculas/Series </a></li>
-                    <li><a href="artsPedidos.html" style="color: rgb(63, 62, 62);">A Pedido </a></li>
+                    <li><button onclick="artsA()" class="boton-navegacion"> Anime </button></li>
+                    <li><button onclick="artsVJ()" class="boton-navegacion"> Videojuegos </button></li>
+                    <li><button onclick="artsT()" class="boton-navegacion"> Terror </button></li>
+                    <li><button onclick="artsK()" class="boton-navegacion"> Kawaii </button></li>
+                    <li><button onclick="artsPS()" class="boton-navegacion"> Peliculas/Series </button></li>
+                    <li><button onclick="window.location.href='artsPedidos.html'" class="boton-navegacion"> A Pedido </button></li>
                 </ul>
             </div>
             <div class="categ">

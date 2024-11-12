@@ -1,25 +1,25 @@
-.carousel-inner > .item > video,
+/* .carousel-inner > .item > video,
     .carousel-inner > .item > a > video {
         width: 500px;
         height: 350px;
         margin-top: 5px;
-}
+} */
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
-    width: 100%;
-    max-width: 100%;
+    gap: 30px;
+    margin-top: 27px;
+    margin-bottom: 27px;
 }
-#theCarousel{
+/* #theCarousel{
     background-color: #242223;
     width: 500px;
     margin-right: 25px;
-}
+} */
 
 .marco{
-    margin-top: 27px;
     width: 210px; /* Ajusta el tamaño de la imagen */
     height: 300px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -27,8 +27,7 @@
     transition: transform 0.3s;
     padding:8px;
     background-color: #f5f5f5;
-    margin-right: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .marco img{
     cursor: url('../Imagenes/cursor2.png'), auto;
@@ -37,9 +36,33 @@
     transform: scale(1.05);
     cursor: url('../Imagenes/cursor2.png'), auto;
 }
-.marcof{
+.compra{
+    color: black;
+    border-radius: 8px;
+    background-color: #5ce1e6;
+    font-family: 'Oduda Bold';
+    font-size: 18px;
+    border: 0;
+    cursor: url('../Imagenes/cursor2.png'), auto;
+    margin: 5px;
+}
+.compra:hover{
+    background-color: #b66ecb;
+    cursor: url('../Imagenes/cursor2.png'), auto;
+}
+.etiquetas{
+     background-color: #f7acd6; /*trabajar con js el cambio de color x tipo de etiqueta */
+    border-radius: 8px;
+    width: 60px;
+    text-align: center;
+    font-family: 'Oduda Bold';
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* .marcof{
     margin-top: 27px;
-    width: 210px; /* Ajusta el tamaño de la imagen */
+    width: 210px;  Ajusta el tamaño de la imagen 
     height: 300px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
@@ -53,79 +76,16 @@
 .marcof:hover {
     transform: scale(1.05);
     cursor: url('../Imagenes/cursor2.png'), auto;
-}
-.etiquetas{
-    background-color: #f7acd6;
-    border-radius: 8px;
-    width: 60px;
-    text-align: center;
-    font-family: 'Oduda Bold';
-    font-size: 18px;
-    margin-top: 8px;
-}
+} */
 
-@media only screen and (max-width: 565px){
-    .carousel-inner > .item > video,
+
+/* @media only screen and (max-width: 565px){
+    /* .carousel-inner > .item > video,
         .carousel-inner > .item > a > video {
             width: 100%;
             height: 350px;
             margin-top: 5px;
-    }
-    .container{
-        display: flex;
-        justify-content: center;
-    }
-    #theCarousel{
-        background-color: #242223;
-        width: 100%;
-        margin-right: 0%;
-    }
-    .marco{
-        margin-top: 27px;
-        width: 210px; /* Ajusta el tamaño de la imagen */
-        height: 300px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-        transition: transform 0.3s;
-        padding:8px;
-        background-color: #f5f5f5;
-        margin-right: 15px;
-        margin-bottom: 5px;
-    }
-    .marco img{
-        cursor: url('../Imagenes/cursor2.png'), auto;
-    }
-    .marco:hover {
-        transform: scale(1.05);
-        cursor: url('../Imagenes/cursor2.png'), auto;
-    }
-    .marcof{
-        margin-top: 27px;
-        width: 210px; /* Ajusta el tamaño de la imagen */
-        height: 300px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-        transition: transform 0.3s;
-        padding:8px;
-        background-color: #f5f5f5;
-        margin-right: 17px;
-    }
-    .marcof img{
-        cursor: url('../Imagenes/cursor2.png'), auto;
-    }
-    .marcof:hover {
-        transform: scale(1.05);
-        cursor: url('../Imagenes/cursor2.png'), auto;
-    }
-    .etiquetas{
-        background-color: #f7acd6;
-        border-radius: 8px;
-        width: 60px;
-        text-align: center;
-        font-family: 'Oduda Bold';
-        font-size: 18px;
-        margin-top: 8px;
-    }
-}
+    } */
+/* } */
 
 /* background-color: #fad8eb; */

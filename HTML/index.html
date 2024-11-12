@@ -36,17 +36,17 @@
                 </nav>
             </div>
             <div class="opciones">
-                <a href="artsAnime.html" class="boton"> Anime </a>
-                <a href="artsVJ.html" class="boton"> Videojuegos </a>
-                <a href="artsTerror.html" class="boton"> Terror </a>
-                <a href="artsKawaii.html" class="boton"> Kawaii </a>
-                <a href="artsPS.html" class="boton"> Peliculas/Series </a>
-                <a href="artsPedidos.html" class="boton"> A Pedido </a>
+                <button  class="boton" onclick="artsA()"> Anime </button>
+                <button  class="boton" onclick="artsVJ()"> Videojuegos </button>
+                <button  class="boton" onclick="artsT()"> Terror </button>
+                <button  class="boton" onclick="artsK()"> Kawaii </button>
+                <button  class="boton" onclick="artsPS()"> Peliculas/Series </button>
+                <button  class="boton" onclick="window.location.href='artsPedidos.html'"> A Pedido </button>
             </div>
             <div class="reemplazo-ops">
                 <div class="container-select">
-                    <select id="menu-opciones">
-                        <option value="" disabled selected>Menu</option>
+                    <select id="menu-opciones" onchange="artsfiltrados()"> <!-- pedidos debe redirigirte a artspedidos -->
+                        <option value="" disabled selected>Categorías</option>
                         <option value="anime">Anime</option>
                         <option value="vj">Videojuegos</option>
                         <option value="terror">Terror</option>
@@ -59,9 +59,9 @@
         </div>
     </header>
     <div class="container">
-        <div id="theCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
+        <!-- <div id="theCarousel" class="carousel slide" data-ride="carousel">
+            Indicadores -->
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#theCarousel" data-slide-to="1"></li>
                 <li data-target="#theCarousel" data-slide-to="2"></li>
@@ -76,10 +76,10 @@
                 <div class="item">
                     <video src="../Imagenes/imgs-porcelana/jack-sally-carousel.mp4" autoplay muted loop></video>
                 </div>
-            </div>
+            </div> -->
             <!-- podes agregar mas imgs con display none o block
                 y cambiar el src url dependiendo el tamaño de pantalla-->
-            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+            <!-- <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">anterior</span>
             </a>
@@ -87,36 +87,93 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">siguiente</span>
             </a>
-        </div>
+        </div> -->
         <div class="marco">
-            <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada">
+            <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada"> 
             <div class="texto-div">
                 <h5>Título del Div</h5>
-                <small>Puedes agregar más texto o cualquier otro elemento aquí.</small>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
             </div>
             <div class="etiquetas">
-                <small>Anime</small>
+                <small id="anime">Anime</small>
             </div>
         </div>
         <div class="marco">
             <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada">
             <div class="texto-div">
                 <h5>Título del Div</h5>
-                <small>Puedes agregar más texto o cualquier otro elemento aquí.</small>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
+            </div>
+            <div class="etiquetas">
+                <small id="anime">Anime</small>
             </div>
         </div>
         <div class="marco">
             <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada">
             <div class="texto-div">
                 <h5>Título del Div</h5>
-                <small>Puedes agregar más texto o cualquier otro elemento aquí.</small>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
+            </div>
+            <div class="etiquetas">
+                <small id="anime">Anime</small>
             </div>
         </div>
-        <div class="marcof">
+        <div class="marco">
             <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada">
             <div class="texto-div">
                 <h5>Título del Div</h5>
-                <small>Puedes agregar más texto o cualquier otro elemento aquí.</small>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
+            </div>
+            <div class="etiquetas">
+                <small id="anime">Anime</small>
+            </div>
+        </div>
+        <div class="marco">
+            <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada"> 
+            <div class="texto-div">
+                <h5>Título del Div</h5>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
+            </div>
+            <div class="etiquetas">
+                <small id="anime">Anime</small>
+            </div>
+        </div>
+        <div class="marco">
+            <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada">
+            <div class="texto-div">
+                <h5>Título del Div</h5>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
+            </div>
+            <div class="etiquetas">
+                <small id="anime">Anime</small>
+            </div>
+        </div>
+        <div class="marco">
+            <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada">
+            <div class="texto-div">
+                <h5>Título del Div</h5>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
+            </div>
+            <div class="etiquetas">
+                <small id="anime">Anime</small>
+            </div>
+        </div>
+        <div class="marco">
+            <img src="../Imagenes/popcatgif.gif" width="195px" height="210px" alt="imagen enmarcada">
+            <div class="texto-div">
+                <h5>Título del Div</h5>
+                <!-- <small>Puedes agregar más texto o cualquier otro elemento aquí.</small> -->
+                <button class="compra" onclick="verProd()">Ver Producto</button>
+            </div>
+            <div class="etiquetas">
+                <small id="anime">Anime</small>
             </div>
         </div>
     </div>
@@ -134,12 +191,12 @@
             <div class="categ" style="margin-right: 5%;">
                 <strong>Navegación</strong>
                 <ul>
-                    <li><a href="artsAnime.html" style="color: rgb(63, 62, 62);">Anime </a></li>
-                    <li><a href="artsVJ.html"style="color: rgb(63, 62, 62);">Videojuegos </a></li>
-                    <li><a href="artsTerror.html" style="color: rgb(63, 62, 62);">Terror </a></li>
-                    <li><a href="artsKawaii.html" style="color: rgb(63, 62, 62);">Kawaii </a></li>
-                    <li><a href="artsPS.html" style="color: rgb(63, 62, 62);">Peliculas/Series </a></li>
-                    <li><a href="artsPedidos.html" style="color: rgb(63, 62, 62);">A Pedido </a></li>
+                    <li><button onclick="artsA()" class="boton-navegacion"> Anime </button></li>
+                    <li><button onclick="artsVJ()" class="boton-navegacion"> Videojuegos </button></li>
+                    <li><button onclick="artsT()" class="boton-navegacion"> Terror </button></li>
+                    <li><button onclick="artsK()" class="boton-navegacion"> Kawaii </button></li>
+                    <li><button onclick="artsPS()" class="boton-navegacion"> Peliculas/Series </button></li>
+                    <li><button onclick="window.location.href='artsPedidos.html'" class="boton-navegacion"> A Pedido </button></li>
                 </ul>
             </div>
             <div class="categ">

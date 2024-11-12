@@ -47,7 +47,7 @@ body{
   grid-template-columns: 22% 1fr;
   grid-template-rows: repeat(2,1fr);
 }
-.item-img a img{
+.item-img img{
   cursor: url('../Imagenes/cursor2.png'), auto;
 }
 .item-img{ 
@@ -79,7 +79,7 @@ body{
   background-color: #5ce1e6;
   padding: 6px 20px;
   border-radius: 7px;
-  text-decoration: none;
+  border: 0;
   margin: 10px;
   cursor: url('../Imagenes/cursor2.png'), auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra exterior */
@@ -88,7 +88,6 @@ body{
 .boton:hover{ 
   color: black;
   background-color: #b66ecb;
-  text-decoration: none;
 }
 .buscador nav{
   display: flex;
@@ -343,6 +342,15 @@ body{
 }
 .categ img{
   margin-top: 5px;
+}
+.boton-navegacion {
+  all: unset; /* Resetea todos los estilos predeterminados */
+  font-family: 'Oduda Bold'; /* Establece la fuente */
+  font-size: 17px; /* Tamaño de la fuente */
+}
+.boton-navegacion:hover{
+  cursor: url('../Imagenes/cursor2.png'), auto;
+  text-decoration: underline;
 }
 @media only screen and (max-width: 570px){
   .containerfoot{
