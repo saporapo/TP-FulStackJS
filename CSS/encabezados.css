@@ -23,6 +23,9 @@ body{
 .iconos small{
   margin-top: 4px;
 }
+.botonlogin {
+  all: unset; /* Resetea todos los estilos predeterminados */
+}
 .iconos .login:hover{
   cursor: url('../Imagenes/cursor2.png'), auto;
   opacity: 1;
