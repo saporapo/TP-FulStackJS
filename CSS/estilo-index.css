@@ -4,7 +4,7 @@
         height: 350px;
         margin-top: 5px;
 } */
-.container{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,8 @@
     gap: 30px;
     margin-top: 27px;
     margin-bottom: 27px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 /* #theCarousel{
     background-color: #242223;
