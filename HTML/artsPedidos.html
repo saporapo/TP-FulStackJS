@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/encabezados.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/artsPeds.css">
     <link rel="icon" href="../Imagenes/iconoPag.ico">
     <title>Porcelana Friki</title>
 </head>
@@ -50,6 +51,18 @@
             </div>
         </div>
     </header>
+    <main>
+        <div class="formulario" id="Formulario">
+            <form id="contact-form" >
+                <input type="text" name="first_name" placeholder="Nombre" required>
+                <input type="text" name="last_name" placeholder="Apellido" required>
+                <input type="text" name="instagram" placeholder="Usuario Instagram" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea id="vol" style="display:flex; flex-direction: column; flex-grow: 0;">Describa el tipo de personaje y formato de la figura que desea. En breve nos contactaremos con usted por instagram o gmail. Muchas gracias ^w^!!</textarea>
+                <input type="button" onclick="enviarMail()" value="Enviar">
+            </form>
+        </div>
+    </main>
     <footer>
         <div class="redes-sociales">
             <a href="https://www.instagram.com/porcelanafriki/" target="_blank" rel="noopener noreferrer"><img src="../Imagenes/instagram_1.png" alt="Instagram"></a>
